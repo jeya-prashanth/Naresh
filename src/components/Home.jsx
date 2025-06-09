@@ -63,7 +63,7 @@ const Home = () => {
                 <Download size={20} />
                 My Resume
               </motion.button> */}
-              <motion.a href={myresume} download="Naresh_CV.pdf" initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, ease: "easeInOut" }}
+              <motion.a href={myresume} download="naresh_cv.pdf" initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, ease: "easeInOut" }}
                 whileHover={{ scale: 1.1, transition: { duration: 0.3, ease: easeOut } }}
                 className="bg-white text-[#1a0055] border-2 border-[#1a0055] px-8 py-4 rounded-lg font-semibold hover:border-blue-200 hover:text-[#1a0055] hover:bg-blue-200 flex items-center justify-center gap-2 shadow-lg">
                 <Download size={20} />
