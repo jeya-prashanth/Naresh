@@ -3,7 +3,7 @@ import { Download, Mail } from 'lucide-react';
 import profile from '../assets/img1.jpg'
 import profile1 from '../assets/img2.jpg'
 import { easeOut, motion } from 'framer-motion';
-import myresume from '../assets/naresh_cv.pdf';
+import myresume from '../assets/naresh_cv.pdf'
 
 const Home = () => {
   const scrollToContact = () => {
@@ -41,9 +41,6 @@ const Home = () => {
             <motion.h2 initial={{x:50, opacity:0}} animate={{x:-0, opacity:1}} transition={{duration:1, ease:"easeInOut"}} className="text-xl md:text-2xl text-[#1a0055] mb-4 font-medium">
               CAD Technician
             </motion.h2>
-            {/* <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              From Jaffna, Sri Lanka
-            </p> */}
             <motion.p initial={{x:100, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:1, ease:"easeInOut" }} className="text-lg text-gray-500 mb-8 leading-relaxed max-w-lg">
               Passionate about creating precise technical drawings and innovative designs using cutting-edge CAD software. Bringing ideas to life through detailed engineering solutions.
             </motion.p>
@@ -58,12 +55,7 @@ const Home = () => {
                 <Mail size={20} />
                 Connect With Me
               </motion.button>
-              {/* <motion.button onClick={()=>downloadResume()} initial={{y:-20, opacity:0}} animate={{y:0, opacity:1}} transition={{duration:1, ease:"easeInOut" }} whileHover={{ scale: 1.1, transition: { duration: 0.3, ease: easeOut } }} 
-                className="bg-white text-[#1a0055] border-2 border-[#1a0055] px-8 py-4 rounded-lg font-semibold hover:border-blue-200 hover:text-[#1a0055] hover:bg-blue-200 flex items-center justify-center gap-2 shadow-lg">
-                <Download size={20} />
-                My Resume
-              </motion.button> */}
-              <motion.a href={myresume} download="naresh_cv.pdf" initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, ease: "easeInOut" }}
+              <motion.a href="/assets/naresh_cv.pdf" download="naresh_cv.pdf" initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, ease: "easeInOut" }}
                 whileHover={{ scale: 1.1, transition: { duration: 0.3, ease: easeOut } }}
                 className="bg-white text-[#1a0055] border-2 border-[#1a0055] px-8 py-4 rounded-lg font-semibold hover:border-blue-200 hover:text-[#1a0055] hover:bg-blue-200 flex items-center justify-center gap-2 shadow-lg">
                 <Download size={20} />
