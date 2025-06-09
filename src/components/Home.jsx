@@ -13,15 +13,6 @@ const Home = () => {
     }
   };
 
-  const downloadResume = () => {
-    const link = document.createElement('a');
-    link.href = myresume;
-    link.download = 'Naresh_CV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <section id="home" className="min-h-screen bg-gradient-to-br from-blue-50 to-white pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -67,11 +58,17 @@ const Home = () => {
                 <Mail size={20} />
                 Connect With Me
               </motion.button>
-              <motion.button onClick={()=>downloadResume()} initial={{y:-20, opacity:0}} animate={{y:0, opacity:1}} transition={{duration:1, ease:"easeInOut" }} whileHover={{ scale: 1.1, transition: { duration: 0.3, ease: easeOut } }} 
+              {/* <motion.button onClick={()=>downloadResume()} initial={{y:-20, opacity:0}} animate={{y:0, opacity:1}} transition={{duration:1, ease:"easeInOut" }} whileHover={{ scale: 1.1, transition: { duration: 0.3, ease: easeOut } }} 
                 className="bg-white text-[#1a0055] border-2 border-[#1a0055] px-8 py-4 rounded-lg font-semibold hover:border-blue-200 hover:text-[#1a0055] hover:bg-blue-200 flex items-center justify-center gap-2 shadow-lg">
                 <Download size={20} />
                 My Resume
-              </motion.button>
+              </motion.button> */}
+              <motion.a href={myresume} download="Naresh_CV.pdf" initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, ease: "easeInOut" }}
+                whileHover={{ scale: 1.1, transition: { duration: 0.3, ease: easeOut } }}
+                className="bg-white text-[#1a0055] border-2 border-[#1a0055] px-8 py-4 rounded-lg font-semibold hover:border-blue-200 hover:text-[#1a0055] hover:bg-blue-200 flex items-center justify-center gap-2 shadow-lg">
+                <Download size={20} />
+                My Resume
+              </motion.a>
             </div>
           </div>
 
