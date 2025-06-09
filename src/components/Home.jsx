@@ -3,7 +3,7 @@ import { Download, Mail } from 'lucide-react';
 import profile from '../assets/img1.jpg'
 import profile1 from '../assets/img2.jpg'
 import { easeOut, motion } from 'framer-motion';
-import myresume from '../assets/Naresh_CV.pdf';
+import myresume from '../assets/naresh_CV.pdf';
 
 const Home = () => {
   const scrollToContact = () => {
