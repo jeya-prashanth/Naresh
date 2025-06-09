@@ -2,6 +2,7 @@ import React from 'react';
 import { Download, Mail } from 'lucide-react';
 import profile1 from '../assets/img2.jpg';
 import { easeOut, motion } from 'framer-motion';
+import MyResume from '../assets/Naresh_CV.pdf';
 
 const Home = () => {
   const scrollToContact = () => {
@@ -97,7 +98,7 @@ const Home = () => {
                 <Mail size={20} />
                 Connect With Me
               </motion.button>
-              <motion.button
+              {/* <motion.button
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, ease: "easeInOut" }}
@@ -110,7 +111,19 @@ const Home = () => {
               >
                 <Download size={20} />
                 My Resume
-              </motion.button>
+              </motion.button> */}
+              <motion.a
+                href={MyResume}
+                download="Naresh_CV.pdf"
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1, ease: "easeInOut" }}
+                whileHover={{ scale: 1.1, transition: { duration: 0.3, ease: easeOut } }}
+                className="bg-white text-[#1a0055] border-2 border-[#1a0055] px-8 py-4 rounded-lg font-semibold hover:border-blue-200 hover:text-[#1a0055] hover:bg-blue-200 flex items-center justify-center gap-2 shadow-lg"
+              >
+                <Download size={20} />
+                My Resume
+              </motion.a>
             </div>
           </div>
         </div>
