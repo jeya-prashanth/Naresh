@@ -2,7 +2,7 @@ import React from 'react';
 import { Download, Mail } from 'lucide-react';
 import profile1 from '../assets/img2.jpg';
 import { easeOut, motion } from 'framer-motion';
-import MyResume from '../assets/Naresh_CV.pdf';
+import resume from '..//assets/naresh.pdf'
 
 const Home = () => {
   const scrollToContact = () => {
@@ -113,8 +113,8 @@ const Home = () => {
                 My Resume
               </motion.button> */}
               <motion.a
-                href={MyResume}
-                download="Naresh_CV.pdf"
+                href={resume}
+                download="naresh.pdf"
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, ease: "easeInOut" }}
