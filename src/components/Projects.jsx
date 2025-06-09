@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 import autoCAD from '../assets/autoCAD.png';
 import revit from '../assets/revit.png';
-import sketchUp from '../assets/SketchUp.png'
+import sketchUp from '../assets/sketch_up.png'
 import interiorLumion from '../assets/in_lumion.png';
 import interiorTwinmotion from '../assets/in_twinmotion.png';
 import exteriorLumion from '../assets/ex_lumion.png';
