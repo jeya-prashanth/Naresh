@@ -127,6 +127,12 @@ const Navbar = () => {
               Services
             </button>
             <button 
+              onClick={() => scrollToSection('projects')}
+              className="text-[#1a0055] block px-3 py-2 text-base font-medium w-full text-left transition-all duration-500"
+            >
+              Projects
+            </button>
+            <button 
               onClick={() => scrollToSection('contact')}
               className="text-[#1a0055] block px-3 py-2 text-base font-medium w-full text-left transition-all duration-500"
             >
